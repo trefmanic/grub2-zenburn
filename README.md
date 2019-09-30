@@ -1,27 +1,24 @@
-# Matter
+### grub2-zenburn ###
 
-Minimalist grub theme inspired by material design 2.
+Easy on the eyes GRUB2 theme, with zenburn colours!
+![zenburn theme preview](demo.png)
 
-![Matter Grub](demo.png)
+Based on [Matter theme][1]
 
-Based on https://github.com/vinceliuice/grub2-themes
+Made with awesome theme preview tool [grub2-theme-preview][2].
+Check it out!
 
-Feel free to request new icons, open issues for any problem you have
-and/or submit pull requests.
+### Installation ###
 
-# Installation
+Clone and run: `sudo ./install.sh`
 
-Download the repo as zip and run `sudo ./set-matter.sh`
+### Removal ###
 
-# Removal
-
-You can delete or comment this line in your `/etc/default/grub` file
+Delete or comment out the line in `/etc/default/grub` file
 ```
-GRUB_THEME="/boot/grub/themes/Matter/theme.txt"
+GRUB_THEME="/boot/grub/themes/zenburn/theme.txt"
 ```
 And then `sudo update-grub`.
 
-# Contributing
-
-For adding icons or new functionalities to the script, read
-https://github.com/mateosss/matter/wiki
+[1]: https://github.com/mateosss/matter "Matter theme on Github"
+[2]: https://github.com/hartwork/grub2-theme-preview "grub2-theme-preview on Github"

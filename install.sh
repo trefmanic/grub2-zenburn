@@ -3,7 +3,7 @@
 ROOT_UID=0
 THEME_DIR="/boot/grub/themes"
 THEME_DIR_2="/boot/grub2/themes"
-THEME_NAME=Matter
+THEME_NAME=zenburn
 
 echo "Installing Matter grub theme..."
 
@@ -40,6 +40,8 @@ if [ "$UID" -eq "$ROOT_UID" ]; then
   echo -e "Updating grub config..."
   if has_command update-grub; then
     update-grub
+  elif has_command update-grub2; then
+    update-grub2
   elif has_command grub-mkconfig; then
     grub-mkconfig -o /boot/grub/grub.cfg
   elif has_command grub2-mkconfig; then

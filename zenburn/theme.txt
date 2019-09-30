@@ -1,0 +1,38 @@
+# GRUB2 zenburn theme
+# Based on matter theme by Mateo de Mayo
+# https://github.com/mateosss/matter
+
+# Global:
+title-text: "GRUB2 Boot menu"
+title-color: "#FCE94F"
+desktop-color: "#2E3436"
+terminal-font: "Terminus 16"
+
+
+# Show the boot menu
++ boot_menu {
+  left = 25%
+  top = 25%
+  width = 50%
+  height = 50%
+  item_font = "Terminus 16"
+  item_color = "#D3D7CF"
+  selected_item_color = "#FFD7AF"
+  icon_width = 48
+  icon_height = 48
+  item_height = 52
+  item_spacing = 4
+  selected_item_pixmap_style = "select_*.png"
+}
+
+# Show a countdown message using the label component
++ label {
+  top = 80%
+  left = 25%
+  width = 50%
+  align = "center"
+  id = "__timeout__"
+  text = "Starting selected in %d seconds"
+  color = "#60B38A"
+  font = "Terminus 16"
+}
