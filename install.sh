@@ -38,10 +38,10 @@ if [ "$UID" -eq "$ROOT_UID" ]; then
 
   # Update grub config
   echo -e "Updating grub config..."
-  if has_command update-grub; then
-    update-grub
-  elif has_command update-grub2; then
+  if has_command update-grub2; then
     update-grub2
+  elif has_command update-grub; then
+    update-grub
   elif has_command grub-mkconfig; then
     grub-mkconfig -o /boot/grub/grub.cfg
   elif has_command grub2-mkconfig; then

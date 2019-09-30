@@ -5,9 +5,9 @@
 # Global:
 title-text: "GRUB2 Boot menu"
 title-color: "#FCE94F"
+title-font: "Terminus Bold 16"
 desktop-color: "#2E3436"
 terminal-font: "Terminus 16"
-
 
 # Show the boot menu
 + boot_menu {
@@ -17,12 +17,12 @@ terminal-font: "Terminus 16"
   height = 50%
   item_font = "Terminus 16"
   item_color = "#D3D7CF"
-  selected_item_color = "#FFD7AF"
   icon_width = 48
   icon_height = 48
   item_height = 52
   item_spacing = 4
   selected_item_pixmap_style = "select_*.png"
+  selected_item_color = "#FFD7AF"
 }
 
 # Show a countdown message using the label component
